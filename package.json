@@ -1,0 +1,34 @@
+{
+  "name": "gcwatch",
+  "version": "0.0.1",
+  "description": "Native NodeJS addon which can use to get the memory allocation in v8",
+  "main": "./lib/memoryallocation.js",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "start": "node ./lib/memoryallocation.js",
+    "test": "node test"
+  },
+  "gypfile": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gihankarunarathne/node-memory-allocation.git"
+  },
+  "keywords": [
+    "native",
+    "memory",
+    "allocation",
+    "v8",
+    "watch"
+  ],
+  "author": "Gihan Karunarathne",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gihankarunarathne/node-memory-allocation/issues"
+  },
+  "homepage": "https://github.com/gihankarunarathne/node-memory-allocation#readme",
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "nan": "^1.8.4",
+    "node-gyp": "^2.0.2"
+  }
+}
